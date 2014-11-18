@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercism.csharp", "csharp\Exercism.csharp.csproj", "{FEF69435-D885-45DD-A446-04FD3BD3F593}"
 EndProject
@@ -71,7 +71,6 @@ Global
 		{1B5FBA75-26DD-4737-9104-5B485DB26457}.Release|Win32.ActiveCfg = Release|Any CPU
 		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
 		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Debug|Win32.ActiveCfg = Debug|Win32
 		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Debug|Win32.Build.0 = Debug|Win32
 		{21FA5FBF-7C7D-4F21-B9CF-4BF918BEBD5B}.Release|Any CPU.ActiveCfg = Release|Win32
