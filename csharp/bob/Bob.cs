@@ -19,7 +19,7 @@ namespace Exercism.bob
 
         private bool IsQuestion(string wahWahWah)
         {
-            if (wahWahWah.Last() == '?')
+            if (wahWahWah.Trim().Last() == '?')
                 return true;
             return false;
         }
