@@ -48,6 +48,7 @@
     <Compile Include="bob\BobTest.cs" />
     <Compile Include="etl\etl.cs" />
     <Compile Include="etl\ETLTest.cs" />
+    <Compile Include="grade-school\grade-school.cs" />
     <Compile Include="grade-school\GradeSchoolTest.cs" />
     <Compile Include="hamming\hamming.cs" />
     <Compile Include="hamming\HammingTest.cs" />

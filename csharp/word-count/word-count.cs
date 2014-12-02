@@ -17,7 +17,7 @@ namespace Exercism.word_count
         public Dictionary<string, int> WordCount()
         {
             return inputPhrase.Split(delimiters)
-                .Where(word => word.Any(c => Char.IsLetterOrDigit(c)))
+                .Where(word => word.Any(Char.IsLetterOrDigit))
                 .Select(word => word.First() == '\'' ? word.Substring(1) : word)
                 .Select(word => word.Last() == '\'' ? word.Substring(0, word.Length - 1) : word)
                 .GroupBy(word => word)

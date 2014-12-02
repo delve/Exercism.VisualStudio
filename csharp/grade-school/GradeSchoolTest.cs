@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using NUnit.Framework;
+using Exercism.grade_school;
 
 [TestFixture]
 public class GradeSchoolTest
