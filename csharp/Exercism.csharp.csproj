@@ -48,6 +48,7 @@
     <Compile Include="bob\BobTest.cs" />
     <Compile Include="etl\etl.cs" />
     <Compile Include="etl\ETLTest.cs" />
+    <Compile Include="grade-school\GradeSchoolTest.cs" />
     <Compile Include="hamming\hamming.cs" />
     <Compile Include="hamming\HammingTest.cs" />
     <Compile Include="leap\Leap.cs" />
@@ -60,6 +61,7 @@
     <None Include="anagram\README.md" />
     <None Include="bob\README.md" />
     <None Include="etl\README.md" />
+    <None Include="grade-school\README.md" />
     <None Include="hamming\README.md" />
     <None Include="leap\README.md" />
     <None Include="packages.config" />

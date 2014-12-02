@@ -10,10 +10,11 @@ namespace CSharpDebugging
     {
         static void Main(string[] args)
         {
-            var detector = new Exercism.anagram.Anagram("Orchestra");
-            var words = new[] { "cashregister", "Carthorse", "radishes" };
-            var results = new[] { "Carthorse" };
-            detector.Match(words);
+            string testPhrase = "go ' Go '' GO";
+            testPhrase = "She said, 'let's meet at twelve o'clock'";
+
+            var phrase = new Exercism.word_count.Phrase(testPhrase);
+            phrase.WordCount();
         }
     }
 }

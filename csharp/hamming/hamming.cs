@@ -1,4 +1,5 @@
-﻿namespace Exercism.hamming
+﻿using System.Linq;
+namespace Exercism.hamming
 {
     public static class Hamming
     {
@@ -13,14 +14,7 @@
             if (left.Length == 0)
                 return 0;
 
-            int hammingDiff = 0;
-            for (int i = 0; i < left.Length; i++)
-            {
-                if (left[i] != right[i])
-                    ++hammingDiff;
-            }
-
-            return hammingDiff;
+            return (left.Zip(right, (lchar, rchar) => lchar != rchar ? 1 : 0)).Sum();
         }
     }
 }
