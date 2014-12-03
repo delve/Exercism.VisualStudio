@@ -18,11 +18,10 @@ namespace Exercism.word_count
         {
             return inputPhrase.Split(delimiters)
                 .Where(word => word.Any(Char.IsLetterOrDigit))
-                .Select(word => word.First() == '\'' ? word.Substring(1) : word)
-                .Select(word => word.Last() == '\'' ? word.Substring(0, word.Length - 1) : word)
+                .Select(word => word.TrimStart('\'').TrimEnd('\''))
                 .GroupBy(word => word)
-                .Select(group => new KeyValuePair<string, int>(group.Key, group.Count()))
-                .ToDictionary(pair => pair.Key, pair => pair.Value);
+                .Select(group => new Tuple<string, int>(group.Key, group.Count()))
+                .ToDictionary(pair => pair.Item1, pair => pair.Item2);
         }
     }
 }
