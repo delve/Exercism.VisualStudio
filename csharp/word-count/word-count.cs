@@ -20,8 +20,7 @@ namespace Exercism.word_count
                 .Where(word => word.Any(Char.IsLetterOrDigit))
                 .Select(word => word.TrimStart('\'').TrimEnd('\''))
                 .GroupBy(word => word)
-                .Select(group => new Tuple<string, int>(group.Key, group.Count()))
-                .ToDictionary(pair => pair.Item1, pair => pair.Item2);
+                .ToDictionary(group => group.Key, group => group.Count());
         }
     }
 }
